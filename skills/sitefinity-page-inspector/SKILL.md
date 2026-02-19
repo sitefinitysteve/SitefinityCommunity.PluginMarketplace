@@ -13,9 +13,9 @@ These tools are available via the Sitefinity MCP server. Use them in order — s
 
 Returns all metadata and widgets for a single page. Accepts flexible identifiers:
 - **Page ID (Guid)** — `fefefa59-f39a-4ac9-bf2f-a54d005f135d`
-- **URL path** — `/ug/home`
-- **URL slug** — `home`
-- **Page title** — `UGME Home` (exact match preferred, partial match with warning)
+- **URL path** — `/about/team`
+- **URL slug** — `team`
+- **Page title** — `Our Team` (exact match preferred, partial match with warning)
 
 The response includes:
 - Page metadata: ID, PageDataId, Title, Url, UrlName, NodeType, IsPublished, TemplateName, Description, Depth
@@ -30,7 +30,9 @@ The response includes:
 
 ### sitefinity_get_widget_properties
 
-Returns full property details for a single widget by its GUID. Use the `Id` from `sitefinity_get_page_details` results.
+Returns full property details for a single widget. Requires two parameters:
+- `widgetId` — the widget's GUID (from `sitefinity_get_page_details` results)
+- `pageIdentifier` — the page the widget is on (same identifier you used with `sitefinity_get_page_details`)
 
 Returns the same property structure but with higher truncation limits (2000 chars) — use this when you need to inspect large values like Model JSON, serialized filter expressions, or long HTML content.
 
@@ -40,7 +42,7 @@ Returns the same property structure but with higher truncation limits (2000 char
 2. **Identify widgets:** Look at the `Widgets` array — filter by `IsLayoutControl: false` for content widgets
 3. **Find the widget you care about:** Match by `FriendlyName` (controller name) or `PlaceHolder`
 4. **Read its configuration:** Check `SettingsProperties` for designer field values
-5. **Need more detail?** Call `sitefinity_get_widget_properties` with the widget's `Id` for full values with higher truncation limits
+5. **Need more detail?** Call `sitefinity_get_widget_properties` with the widget's `Id` and the same page identifier for full values with higher truncation limits
 
 ## Database Architecture
 
