@@ -1,0 +1,17 @@
+{
+  "name": "sitefinity-community",
+  "owner": {
+    "name": "SitefinityCommunity"
+  },
+  "metadata": {
+    "description": "Community-maintained Sitefinity CMS development skills and tools for Claude Code. Not affiliated with or endorsed by Progress Software."
+  },
+  "plugins": [
+    {
+      "name": "sitefinity",
+      "source": ".",
+      "description": "Sitefinity CMS development skills — widget development, database structure, and CMS best practices",
+      "version": "1.0.0"
+    }
+  ]
+}

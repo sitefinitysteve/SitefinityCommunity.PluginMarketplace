@@ -1,0 +1,12 @@
+{
+  "name": "sitefinity",
+  "description": "Community-maintained Sitefinity CMS development skills for Claude Code — widget development, database structure, and CMS best practices",
+  "version": "1.0.0",
+  "author": {
+    "name": "SitefinityCommunity"
+  },
+  "homepage": "https://github.com/SitefinityCommunity/ClaudePlugin",
+  "repository": "https://github.com/SitefinityCommunity/ClaudePlugin",
+  "license": "MIT",
+  "keywords": ["sitefinity", "cms", "widgets", "mvc", "dotnet"]
+}
