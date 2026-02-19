@@ -15,7 +15,7 @@ A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-market
 ### Add the marketplace
 
 ```shell
-/plugin marketplace add sitefinitysteve/SitefinityCommunity.ClaudePlugin
+/plugin marketplace add sitefinitysteve/SitefinityCommunity.PluginMarketplace
 ```
 
 ### Install the plugin
@@ -52,7 +52,7 @@ Add the marketplace to your repository's `.claude/settings.json` so team members
     "sitefinity-community": {
       "source": {
         "source": "github",
-        "repo": "sitefinitysteve/SitefinityCommunity.ClaudePlugin"
+        "repo": "sitefinitysteve/SitefinityCommunity.PluginMarketplace"
       }
     }
   },
@@ -67,7 +67,7 @@ Add the marketplace to your repository's `.claude/settings.json` so team members
 Test the plugin locally without installing:
 
 ```shell
-claude --plugin-dir ./SitefinityCommunity.ClaudePlugin
+claude --plugin-dir ./SitefinityCommunity.PluginMarketplace
 ```
 
 Validate the plugin structure:

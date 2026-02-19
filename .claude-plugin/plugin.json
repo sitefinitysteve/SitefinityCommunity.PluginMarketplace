@@ -5,8 +5,8 @@
   "author": {
     "name": "SitefinityCommunity"
   },
-  "homepage": "https://github.com/SitefinityCommunity/ClaudePlugin",
-  "repository": "https://github.com/SitefinityCommunity/ClaudePlugin",
+  "homepage": "https://github.com/sitefinitysteve/SitefinityCommunity.PluginMarketplace",
+  "repository": "https://github.com/sitefinitysteve/SitefinityCommunity.PluginMarketplace",
   "license": "MIT",
   "keywords": ["sitefinity", "cms", "widgets", "mvc", "dotnet"]
 }
